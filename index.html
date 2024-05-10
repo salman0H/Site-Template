@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="image/title-of-site/favicon.png.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;900&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Home</title>
+</head>
+<body  onscroll="changeBackground()">
+    <!-- header -->
+    <div class="head--nav">
+        <div class="--nav--logo">
+            <a href="#" class="--logo--link --font--bold">
+                <span>
+                    Jack Co.
+                </span>
+            </a>
+        </div>
+        <input type="checkbox" class="--check--ham" id="--ham">
+        <label for="--ham" class="--check--label">
+                <span class="--upper --font--bold">menu</span>
+                <i class="fa fa-navicon"></i>
+        </label>
+
+        <div class="--nav--menu">
+            <ul class="--menu--btn">
+                <li class="--btn--bottom1">
+                    <a href="index.html" class="--bottoom--link1">
+                        <span>
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom2">
+                    <a href="About.html" class="--bottoom--link2">
+                        <span>
+                            About
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom3">
+                    <a href="portfolio.html" class="--bottoom--link3">
+                        <span>
+                            Portfolio
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom4">
+                    <a href="" class="--bottoom--link4">
+                        <span>
+                            Blog
+                        </span>
+                    </a>
+                    <div class="--link4--dropdown">
+                        <a href="blog.html" class="--dropdown--1">
+                            Blog
+                        </a>
+                        <a href="blogDetails.html" class="--dropdown--2">
+                            Blog Details
+                        </a>
+                        <a href="elements.html" class="--dropdown--3">
+                            Elements
+                        </a>
+                    </div>
+                </li>
+                <li class="--btn--bottom5">
+                    <a href="contact.html" class="--bottoom--link5">
+                        <span>
+                            Contact
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom6">
+                    <a href="contact.html" class="--bottoom--link6">
+                        <span>
+                            Fire Me An Email
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- js for change bg color navar -->
+    <script>
+        function changeBackground() {
+          var scrollHeight = window.scrollY;
+              var targetDiv = document.querySelector('.head--nav');
+              var targetNav = document.querySelector('.--nav--menu');
+              if (scrollHeight >= 500) {
+                targetDiv.classList.add('scroll--condition');
+                targetNav.classList.add('scroll--nav--condition');
+              } else {
+                targetDiv.classList.remove('scroll--condition');
+                targetNav.classList.remove('scroll--nav--condition');
+              }
+        }
+      </script>
+
+    <!-- hero -->
+    <div class="hero">
+        <div class="hero--text">
+            <p class="--font--style--master --text1">
+                Visual Design & Art Director
+            </p>
+            <p class="--font--style--information --text2">
+                Hi, I am Jack, docusing on creating emotional expriences.
+            </p>
+            <button class="--transition">
+                <a href="" class="--upper">
+                    hire me
+                </a>
+            </button>
+        </div>
+        <div class="hero--image"></div>
+    </div>
+    <!-- main -->
+    <!-- section1 -->
+    <div class="main--section1">
+        <div class="main--info">
+            <div class="--info--top">
+                <p class="--upper --top--first">
+                    about myself
+                </p>
+                <h2 class="--font--style--master --top--midd --margin--top">
+                    I'm a Creative director based on New York, Who loves clean, simple & uniqe design. I also enjoy crafting..
+                </h2>
+                <a class="--upper --top--bottom">
+                    donload resume
+                </a>
+            </div>
+            <div class="--info--semantic">
+                <div class="--line--black --margin--top --semantic--line"></div>
+                <div class="--semantic--level">
+                    <div class="--level--user">
+                        <p class="--upper">
+                            user reachers
+                        </p>
+                    </div>
+                    <div class="--level--web">
+                        <p class="--upper">
+                            web design
+                        </p>
+                    </div>
+                    <div class="--level--ui">
+                        <p class="--upper">
+                            ui design
+                        </p>
+                    </div>
+                    <div class="--level--illustration">
+                        <p class="--upper">
+                            illustration
+                        </p>
+                    </div>
+                </div>
+                <div class="--semantic--bottom --margin--top --font--line--height">
+                    Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sectoin2 -->
+    <div class="main--section2">
+        <div class="--section2--myexpertise">
+            <h2 class="--myexpertise--title --font--style--master">
+                My Expertise
+            </h2>
+            <div class="--myexpertise--left --font--style--master">
+                <h2>
+                    Experience Design
+                </h2>
+                <h2 class="--fade">
+                    Interface Design
+                </h2>
+                <h2 class="--fade">
+                    Web Design
+                </h2>
+            </div>
+            <div class="--myexpertise--right">
+                <div class="--right--info">
+                    <p class="--info--first">
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                    <p>
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section3 -->
+    <div class="main--section3">
+        <div class="--section3">
+            <div class="--section3--title">
+                <h2 class="--font--style--master">
+                    Experience
+                </h2>
+            </div>
+            <div class="--section3--suggestion">
+                <div class="--suggestion--items --line--black--all">
+                    <div class="--user--info">
+                        <h3 class="--font--style--master">
+                            User Experience Designer
+                        </h3>
+                        <p>
+                            March 2020-Present
+                        </p>
+                    </div>
+                    <p class="--link">
+                        <span class="--fade">
+                            at
+                        </span>
+                        <a href="#">
+                            Colorlib
+                            <i class="fa fa-share-square-o"></i>
+                        </a>
+                    </p>
+                    <p class="--note">
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                </div>
+
+                <div class="--suggestion--items --line--black--all">
+                    <div class="--user--info">
+                        <h3 class="--font--style--master">
+                            UI Designer
+                        </h3>
+                        <p>
+                            March 2020-Present
+                        </p>
+                    </div>
+                    <p class="--link">
+                        <span class="--fade">
+                            at
+                        </span>
+                        <a href="#">
+                            Colorlib
+                            <i class="fa fa-share-square-o"></i>
+                        </a>
+                    </p>
+                    <p class="--note">
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                </div>
+
+                <div class="--suggestion--items --line--black--all">
+                    <div class="--user--info">
+                        <h3 class="--font--style--master">
+                            Illustration Artiest
+                        </h3>
+                        <p>
+                            March 2020-Present
+                        </p>
+                    </div>
+                    <p class="--link">
+                        <span class="--fade">
+                            at
+                        </span>
+                        <a href="#">
+                            Colorlib
+                            <i class="fa fa-share-square-o"></i>
+                        </a>
+                    </p>
+                    <p class="--note">
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                </div>
+
+                <div class="--suggestion--items --line--black--all">
+                    <div class="--user--info">
+                        <h3 class="--font--style--master">
+                            Graphic Artiest
+                        </h3>
+                        <p>
+                            March 2020-Present
+                        </p>
+                    </div>
+                    <p class="--link">
+                        <span class="--fade">
+                            at
+                        </span>
+                        <a href="#">
+                            Colorlib
+                            <i class="fa fa-share-square-o"></i>
+                        </a>
+                    </p>
+                    <p class="--note">
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section4 -->
+    <div class="main--section4">
+        <div class="--section4--image"></div>
+        <div class="--section4--info">
+            <p class="--info--text --font--style--information">
+                "I help creative entrepreneurs build better businesses, maximize productivity, and cultivate an engaged community.
+            </p>
+        </div>
+    </div>
+
+    <!-- section5 -->
+    <div class="main--section5">
+        <div class="--section5">
+            <div class="--section5--title">
+                <h2 class="--font--style--master">
+                    Education
+                </h2>
+            </div>
+            <div class="--section5--suggestion">
+                <div class="--suggestion--items --line--black--all">
+                    <div class="--user--info">
+                        <h3 class="--font--style--master">
+                            User Experience Designer
+                        </h3>
+                        <p>
+                            March 2020-Present
+                        </p>
+                    </div>
+                    <p class="--link">
+                        <span class="--fade">
+                            at
+                        </span>
+                        <a href="#">
+                            Dalian University
+                            <i class="fa fa-share-square-o"></i>
+                        </a>
+                    </p>
+                    <p class="--note">
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                </div>
+
+                <div class="--suggestion--items --line--black--all">
+                    <div class="--user--info">
+                        <h3 class="--font--style--master">
+                            UI Designer
+                        </h3>
+                        <p>
+                            March 2020-Present
+                        </p>
+                    </div>
+                    <p class="--link">
+                        <span class="--fade">
+                            at
+                        </span>
+                        <a href="#">
+                            School of California
+                            <i class="fa fa-share-square-o"></i>
+                        </a>
+                    </p>
+                    <p class="--note">
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section6 -->
+    <div class="main--section6">
+        <div class="--section6--image1">
+            <a href="">
+                <i class="fa fa-search-plus --search"></i>
+            </a>
+        </div>
+        <div class="--section6--image2">
+            <a href="">
+                <i class="fa fa-search-plus --search"></i>
+            </a>
+        </div>
+        <div class="--section6--image3">
+            <a href="">
+                <i class="fa fa-search-plus --search"></i>
+            </a>
+        </div>
+        <div class="--section6--image4">
+            <a href="">
+                <i class="fa fa-search-plus --search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="foot">
+        <div class="foot--master">
+            <div class="foot--top">
+                <h2 class="--margin--top --font--style--master">
+                    I'm a designer, based in San Francisco. Currently a freelancer. You can see my hobbies on @Jack-Co and some photos on me too.
+                </h2>
+            </div>
+
+            <div class="foot--midd --line--black--top">
+                <div class="--midd--send">
+                    <p class="--upper --font--bold">
+                        drop a line
+                    </p>
+                    <form action="" class="--font--style--information">
+                        <input type="text" placeholder="Your Name" class="--font--style--information">
+                        <input type="email" placeholder="Email" class="--font--style--information">
+                        <input type="text" name="" id="" placeholder="Subject" class="--font--style--information">
+                        <textarea name="" placeholder="Message" id="" cols="30" rows="10" class="--font--style--information"></textarea>
+                    </form>
+                    <button class="--font--style--master">
+                        <a href="#" class="">
+                            Send Me
+                        </a>
+                    </button>
+                </div>
+                <div class="--midd--contact">
+                    <p class="--upper --contact--text --font--bold">
+                        Contact me
+                    </p>
+                    <div class="--contact--link">
+                        <a href="" class="--address">
+                            4657 Franklin Avenue, ARCH CAPE
+                        </a>
+                        <a href="" class="--number">
+                            +361-883-3218
+                        </a>
+                        <a href="" class="--email">
+                            hello@jac-co.com
+                        </a>
+                    </div>
+                    <div class="--contact--download">
+                        <button class="--upper">
+                            <a href="#" class="--upper">
+                                download me
+                            </a>
+                        </button>
+                    </div>
+                    <div class="--contact--icon">
+                        <div class="--icon--facebook">
+                            <a href="">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="--icon--instagram">
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="--icon--linkedin">
+                            <a href="">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot--bottom">
+                Copyright ©2024 All rights reserved | This template is made with
+                <i class="fa fa-heart"></i>
+                by
+                <a href="">
+                    Colorlib
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

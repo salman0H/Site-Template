@@ -1,0 +1,161 @@
+.main{
+    width: 100%;
+    height: 1400px;
+    position: relative;
+    background: $--font--white--color;
+    .main--master{
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: 
+        "empty1"
+        "map"
+        "address"
+        "empty2" 
+        ;
+        .main--map{
+            grid-area: map;
+            border: 1px solid $--form--gray--color;
+            overflow: hidden;
+        }
+        .main--address{
+            grid-area: address;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 70% 8% 22%;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "left center right"
+            ;
+            .--address--left{
+                grid-area: left;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 5% 10% 55% 25% 5%;
+                grid-template-areas: 
+                "empty1 empty2"
+                "title  empty3"
+                "form   form"
+                "send   send"
+                "empty5 empty6"
+                ;
+                grid-gap: 10px;
+                position: relative;
+                h2{
+                    grid-area: title;
+                    text-align: left;
+                }
+                form{
+                    grid-area: form;
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 50%);
+                    grid-template-rows: 70% 15% 15%;
+                    grid-template-areas: 
+                    "message message"
+                    "name    email"
+                    "subject subject"
+                    ;
+                    grid-gap: 15px;
+                    .--form--message{
+                        grid-area: message;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .--form--name{
+                        grid-area: name;
+                    }
+                    .--form--email{
+                        grid-area: email;
+                    }
+                    .--form--subject{
+                        grid-area: subject;
+                    }
+                    input, textarea{
+                        border: 1px solid $--form--gray--color;
+                        padding: 10px 20px;
+                    }
+                }
+                button{
+                    grid-area: send;
+                    background: transparent;
+                    border: 1px solid $--master--body--hero--color;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 40%;
+                    height: 40%;
+                    padding: 20px 0px;
+                    a{
+                        color: $--master--body--hero--color;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.4s;
+                        &:hover{
+                            background: $--master--body--hero--color;
+                            color: $--font--white--color;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+            }
+            .--address--right{
+                width: 100%;
+                height: 100%;
+                grid-area: right;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 3fr repeat(3, 2fr) 5fr;
+                grid-template-areas: 
+                "empty1"
+                "address"
+                "number"
+                "email"
+                "empty2"
+                ; 
+                grid-gap: 10px;
+                div{
+                    display: grid;
+                    grid-template-columns: 20% 5% 65%;
+                    grid-template-rows: repeat(2, 50%);
+                    grid-template-areas: 
+                    "icon empty1 top"
+                    "icon empty2 bottom"
+                    ;
+                    .--address--top{
+                        grid-area: icon;
+                        text-align: center;
+                        margin: 5px;
+                        font-size: 40px;
+                        padding: 5px;
+                    }
+                    .--address--midd{
+                        grid-area: top;
+                    }
+                    .--address--bottom{
+                        grid-area: bottom;
+                    }
+                }
+                .--address--place{
+                    grid-area: address;
+                }
+                .--address--number{
+                    grid-area: number;
+                }
+                .--address--email{
+                    grid-area: email;
+                }
+            }
+        }
+    }
+}

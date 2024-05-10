@@ -1,0 +1,183 @@
+.head--nav{
+    background: transparent;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid $--font--gray--color;
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "empty1 logo menuu empty2";
+    position: fixed;
+    z-index: 10;
+    // logo
+    .--nav--logo{
+        grid-area: logo;
+        height: 100%;
+        font-weight: bold;
+        font-size: 24px !important;
+        span{
+            grid-area: logo;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    // menu
+    .--check--ham{
+        display: none;
+    }
+    .--check--label{
+        cursor: pointer;
+        display: none;
+    }
+    .--nav--menu{
+        grid-area: menuu;
+        height: 100%;
+        position: relative;
+        ul{
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr) 2fr;
+            grid-template-rows: 100%;
+            grid-template-areas: 
+            "home about por blog contact fire"
+            ;
+            position: relative;
+            // list
+            li{
+                border-left: 1px solid $--font--gray--color;
+                text-align: center;
+                position: relative; 
+                transition: 0.5s; 
+                height: 100%;
+                &:hover{
+                    background-color: $--hover--green;
+                    transition: 0.5s; 
+                }
+                a{
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    span{
+                        width: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            // list grid
+            .--btn--bottom1{
+                grid-area: home; 
+            }
+            .--btn--bottom2{
+                grid-area: about;
+            }
+            .--btn--bottom3{
+                grid-area: por;
+            }
+            .--btn--bottom4{
+                grid-area: blog;
+                .--link4--dropdown{
+                    position: absolute;
+                    display: none;
+                    background: $--master--body--main--color;
+                    width: 150%;
+                    height: 200%;
+                    transition: 0.3s;
+                    padding-top: 20px;
+                    transform-origin: 0 0;
+                    a{
+                        text-align: left;
+                        display: block;
+                        height: 35%;
+                        padding-left: 10px;
+                        transition: 0.5s;
+                        &:hover{
+                            transform: translate(2%,0%);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                &:hover{
+                    .--link4--dropdown{
+                        display: block;
+                    }
+                }
+            }
+            .--btn--bottom5{
+                grid-area: contact;
+            }
+            .--btn--bottom6{
+                grid-area: fire;
+                a{
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}  
+// js condition
+.scroll--condition{
+    background-color: $--master--body--main--color;
+    transition: 1s;
+}  
+// respon for hamburger
+@media (max-width: 768px){
+    /*header*/
+    .head--nav{
+        .--check--ham{
+            &:checked ~ .--nav--menu{
+                right: 0;
+                transition: 1s;
+            }
+        }
+        .--nav--menu{
+            width: 40% !important;
+            display: block;
+            right: -100%;
+            height: 91.25% !important;
+            background-color: $--font--gray--color
+            !important;
+            position: fixed;
+            bottom: 0;
+            transition: 1s;
+            .--menu--btn{
+                display: flex;
+                flex-direction: column;
+                font-weight: bold;
+                li{
+                    a{
+                        span{
+                            color: $--font--black--color!important;
+                        }
+                    }
+                }
+                .--btn--bottom4{
+                    .--link4--dropdown{
+                        width: 70%;
+                        background-color: $--hover--green;
+                        position: relative;
+                        left: -70%;
+                        top: -100%;
+                        border-left: 0.2px solid black;
+                        border-bottom: 0.2px solid black;
+                        border-top: 0.2px solid black;
+                    }
+                }
+            }
+        }
+        .scroll--nav--condition{
+            background-color: $--master--body--main--color !important;
+            transition: 1s;
+            border-left: 0.2px solid black;
+        }
+    }
+}

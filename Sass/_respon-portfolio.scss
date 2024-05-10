@@ -1,0 +1,231 @@
+@media (max-width: 940px){
+    /*main*/
+    .main--section1{
+        .main--info{
+            padding: 70px;
+        }
+    }
+    /*main*/
+    // section 6
+    .main{
+        height: 1000px;
+    }
+}
+@media (max-width: 900px){
+    /*header*/
+    .head--nav{
+        grid-template-columns: 1fr 3fr 8fr 1fr;
+    }
+    /*footer*/
+    .foot{
+        .foot--master{
+            .foot--midd{
+                .--midd--contact{
+                    grid-template-rows: 10% 10% 25% 15% 2% 18%;
+                    .--contact--download{
+                        margin-top: 2px;
+                    }
+                    .--contact--icon{
+                        div{
+                            width: 40px;
+                            height: 40px;
+                            font-size: 1.15rem;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    /*header*/
+    .head--nav{
+        overflow: hidden;
+        .--check--ham{
+            display: none;
+            &:checked ~ .--nav--menu{
+                display: block;
+            }
+        }
+        .--nav--menu{
+            display: none;
+            grid-area: none;
+            z-index: 20;
+            background-color: blaCK;
+            ul{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                z-index: 20;
+                li{
+                    border: none;
+                }
+            }
+        }
+        .--check--label{
+            grid-area: menuu;
+            display: block;
+            font-size: 18px;
+            text-align: right;
+            position: relative;
+            top: 40%;
+        }
+    }
+    /*hero*/
+    .hero{
+        overflow: hidden;
+        .hero--image{
+            left: 40%;
+        }
+        .hero--text{
+            top: 50%;
+            left: 10%;
+            .--text1{
+                width: 350px;;
+            }
+            .--text2{
+                width: 300px;
+            }
+        }
+    }
+    /*main*/
+    .main{
+        height: 700px;
+    }
+    /*footer*/
+    .foot{
+        height: 1400px;
+        .foot--master{
+            .foot--midd{
+                grid-template-columns: 1fr;
+                grid-template-rows: 50% 5% 45%;
+                grid-template-areas: 
+                "send"
+                "empty"
+                "contact"
+                ;
+                .--midd--send{
+                    button{
+                        padding: 9px 34px;
+                    }
+                }
+                .--midd--contact{
+                    width: 50%;
+                    grid-template-rows: 20% 35% 20% 5%;
+                    grid-template-areas: 
+                    // "empty1"
+                    "text"
+                    "link"
+                    "download"
+                    "icon"
+                    // "empty2"
+                    ;
+                    .--contact--download{
+                        button{
+                            padding: 15px;
+                        }
+                    }
+                    .--contact--icon{
+                        grid-template-columns: repeat(3, 31%) 7%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 645px) {
+    /*main*/
+    .main{
+        height: 700px;
+    }
+}
+@media (max-width: 590px) {
+    /*main*/
+    .main{
+        height: 2000px;
+        .main--gallery{
+            grid-template-columns: 1fr;
+            grid-template-rows: 3% 6% repeat(4, 22%) 3%;
+            grid-template-areas: 
+            "empty1"
+            "head"
+            "image1"
+            "image2"
+            "image3"
+            "image4"
+            "empty2"
+            ;
+            grid-gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    /*hero*/
+    .hero{
+        overflow: hidden;
+        .hero--image{
+            display: none;
+        }
+        .hero--text{
+            top: 50%;
+            left: 10%;
+            width: 100%;
+        }
+    }
+    /*main*/
+    .main{
+        height: 1500px;
+        .main--gallery{
+            grid-template-columns: 1fr;
+            grid-template-rows: 5% 10% repeat(4, 20%) 5%;
+            grid-template-areas: 
+            "empty1"
+            "head"
+            "image1"
+            "image2"
+            "image3"
+            "image4"
+            "empty3"
+            ;
+        }
+    }
+    /*footer*/
+    .foot{
+        height: 1600px;
+        .foot--master{
+            .foot--midd{
+                grid-template-columns: 1fr;
+                grid-template-rows: 50% 5% 45%;
+                grid-template-areas: 
+                "send"
+                "empty"
+                "contact"
+                ;
+                .--midd--send{
+                    button{
+                        padding: 14px 34px;
+                    }
+                }
+                .--midd--contact{
+                    width: 80%;
+                    .--contact--download{
+                        button{
+                            width: 75%;    
+                            height: 65%;                       
+                            left: 0%;
+                            position: absolute;
+                            padding: 25px 34px;
+                        }
+                    }
+                    .--contact--icon{
+                        grid-template-columns: repeat(3, 30%) 10%;
+                    }
+                }
+            }
+        }
+    }
+}

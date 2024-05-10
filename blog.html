@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="image/title-of-site/favicon.png.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;900&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Blog</title>
+</head>
+<body onscroll="changeBackground()">
+    <!-- header -->
+    <div class="head--nav">
+        <div class="--nav--logo">
+            <a href="#" class="--logo--link --font--bold">
+                <span>
+                    Jack Co.
+                </span>
+            </a>
+        </div>
+        <input type="checkbox" class="--check--ham" id="--ham">
+        <label for="--ham" class="--check--label">
+            <span>
+                <span class="--upper --font--bold">menu</span>
+                <i class="fa fa-navicon"></i>
+            </span>
+        </label>
+        <div class="--nav--menu">
+            <ul class="--menu--btn">
+                <li class="--btn--bottom1">
+                    <a href="index.html" class="--bottoom--link1">
+                        <span>
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom2">
+                    <a href="About.html" class="--bottoom--link2">
+                        <span>
+                            About
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom3">
+                    <a href="portfolio.html" class="--bottoom--link3">
+                        <span>
+                            Portfolio
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom4">
+                    <a href="" class="--bottoom--link4">
+                        <span>
+                            Blog
+                        </span>
+                    </a>
+                    <div class="--link4--dropdown">
+                        <a href="blog.html" class="--dropdown--1">
+                            Blog
+                        </a>
+                        <a href="blogDetails.html" class="--dropdown--2">
+                            Blog Details
+                        </a>
+                        <a href="elements.html" class="--dropdown--3">
+                            Elements
+                        </a>
+                    </div>
+                </li>
+                <li class="--btn--bottom5">
+                    <a href="contact.html" class="--bottoom--link5">
+                        <span>
+                            Contact
+                        </span>
+                    </a>
+                </li>
+                <li class="--btn--bottom6">
+                    <a href="contact.html" class="--bottoom--link6">
+                        <span>
+                            Fire Me An Email
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <!-- js for change bg color navar -->
+    <script>
+        function changeBackground() {
+          var scrollHeight = window.scrollY;
+              var targetDiv = document.querySelector('.head--nav');
+              var targetNav = document.querySelector('.--nav--menu');
+              if (scrollHeight >= 200) {
+                targetDiv.classList.add('scroll--condition');
+                targetNav.classList.add('scroll--nav--condition');
+              } else {
+                targetDiv.classList.remove('scroll--condition');
+                targetNav.classList.remove('scroll--nav--condition');
+              }
+        }
+      </script>
+
+       <!-- hero -->
+        <div class="hero">
+            <div class="hero--text">
+                <h2 class="--font--style--master">
+                    Blog
+                </h2>
+            </div>
+            <div class="hero--image"></div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="main--master">
+                <div class="--master--left">
+
+                    <div class="--left--post --post1">
+                        <div class="--post--image">
+                            <a href="">
+                                <span class="--font--style--master">15</span>
+                                <br>
+                                <span>Jan</span>
+                            </a>
+                        </div>
+                        <div class="--post--info">
+                            <div class="--info--text">
+                                <h2 class="--font--style--master">
+                                    <a href="">
+                                        Google inks pact for new 35-storey office
+                                    </a>
+                                </h2>
+                                <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                                </p>
+                                <div class="--info--link">
+                                    <span class="--border">
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-user"></i>
+                                            Travel,Lifestyle
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-comments"></i>
+                                            03 Comments
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="--left--post --post2">
+                        <div class="--post--image">
+                            <a href="">
+                                <span class="--font--style--master">15</span>
+                                <br>
+                                <span>Jan</span>
+                            </a>
+                        </div>
+                        <div class="--post--info">
+                            <div class="--info--text">
+                                <h2 class="--font--style--master">
+                                    <a href="">
+                                        Google inks pact for new 35-storey office
+                                    </a>
+                                </h2>
+                                <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                                </p>
+                                <div class="--info--link">
+                                    <span class="--border">
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-user"></i>
+                                            Travel,Lifestyle
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-comments"></i>
+                                            03 Comments
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="--left--post --post3">
+                        <div class="--post--image">
+                            <a href="">
+                                <span class="--font--style--master">15</span>
+                                <br>
+                                <span>Jan</span>
+                            </a>
+                        </div>
+                        <div class="--post--info">
+                            <div class="--info--text">
+                                <h2 class="--font--style--master">
+                                    <a href="">
+                                        Google inks pact for new 35-storey office
+                                    </a>
+                                </h2>
+                                <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                                </p>
+                                <div class="--info--link">
+                                    <span class="--border">
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-user"></i>
+                                            Travel,Lifestyle
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-comments"></i>
+                                            03 Comments
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="--left--post --post4">
+                        <div class="--post--image">
+                            <a href="">
+                                <span class="--font--style--master">15</span>
+                                <br>
+                                <span>Jan</span>
+                            </a>
+                        </div>
+                        <div class="--post--info">
+                            <div class="--info--text">
+                                <h2 class="--font--style--master">
+                                    <a href="">
+                                        Google inks pact for new 35-storey office
+                                    </a>
+                                </h2>
+                                <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                                </p>
+                                <div class="--info--link">
+                                    <span class="--border">
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-user"></i>
+                                            Travel,Lifestyle
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-comments"></i>
+                                            03 Comments
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="--left--post --post5">
+                        <div class="--post--image">
+                            <a href="">
+                                <span class="--font--style--master">15</span>
+                                <br>
+                                <span>Jan</span>
+                            </a>
+                        </div>
+                        <div class="--post--info">
+                            <div class="--info--text">
+                                <h2 class="--font--style--master">
+                                    <a href="">
+                                        Google inks pact for new 35-storey office
+                                    </a>
+                                </h2>
+                                <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.
+                                </p>
+                                <div class="--info--link">
+                                    <span class="--border">
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-user"></i>
+                                            Travel,Lifestyle
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="" class="--fade">
+                                            <i class="fa fa-comments"></i>
+                                            03 Comments
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="--left--movepage">
+                        <div class="--movepage --fade">
+                            <a class="--preivious--page" href="#">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="--first--page" href="#">
+                                <span>1</span>
+                            </a>
+                            <a class="--second--page" href="#">
+                                <span>2</span>
+                            </a>
+                            <a class="--next--page" href="#">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="--master--right">
+                    <div class="--search">
+                        <input type="text" placeholder="Search Keyword" class="--fade">
+                        <a href="#">
+                            Search
+                        </a>
+                    </div>
+                    <div class="--category">
+                        <h3 class="--font--style--master">
+                            Category
+                        </h3>
+                        <div class="--line--black--top--fade">
+                            <a href="">
+                                Resturant food(37)
+                            </a>
+                        </div>
+                        <div class="--line--black--top--fade">
+                            <a href="">
+                                Trael news(10)
+                            </a>
+                        </div>
+                        <div class="--line--black--top--fade">
+                            <a href="">
+                                Modern technology(03)
+                            </a>
+                        </div>
+                        <div class="--line--black--top--fade">
+                            <a href="">
+                                Product
+                            </a>
+                        </div>
+                        <div class="--line--black--top--fade">
+                            <a href="">
+                                Inspiration(21)
+                            </a>
+                        </div>
+                        <div class="--line--black--top--fade">
+                            <a href="">
+                                Health care (21)09
+                            </a>
+                        </div>
+                    </div>
+                    <div class="--recent--post">
+                        <h3 class="--font--style--master">
+                            Recent Post
+                        </h3>
+                        <div class="--line--black--top --fade"></div>
+                        <div class="--post --number1">
+                            <div class="--post--image"></div>
+                            <div class="--post--text">
+                                <h4 class="--font--style--master">
+                                    <a href="">
+                                        From life was you fish...
+                                    </a>
+                                </h4>
+                                <p>
+                                    January 12, 2019
+                                </p>
+                            </div>
+                        </div>
+                        <div class="--post --number2">
+                            <div class="--post--image"></div>
+                            <div class="--post--text">
+                                <h4 class="--font--style--master">
+                                    <a href="">
+                                        The Ammazing Hubble
+                                    </a>
+                                </h4>
+                                <p>
+                                    02 Hours ago
+                                </p>
+                            </div>
+                        </div>
+                        <div class="--post --number3">
+                            <div class="--post--image"></div>
+                            <div class="--post--text">
+                                <h4 class="--font--style--master">
+                                    <a href="">
+                                        Astronomy Or Astrology
+                                    </a>
+                                </h4>
+                                <p>
+                                    03 Hours ago
+                                </p>
+                            </div>
+                        </div>
+                        <div class="--post --number4">
+                            <div class="--post--image"></div>
+                            <div class="--post--text">
+                                <h4 class="--font--style--master">
+                                    <a href="">
+                                        Astroids telescope
+                                    </a>
+                                </h4>
+                                <p>
+                                    01 Hours ago
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="--tag--clouds">
+                        <h3 class="--font--style--master">
+                            Tag Cloudsd
+                        </h3>
+                        <div class="--line--black --fade"></div>
+                        <div class="--tag--links">
+                            <a href="" class="--links1">
+                                project
+                            </a>
+                            <a href="" class="--links2">
+                                love
+                            </a>
+                            <a href="" class="--links3">
+                                technologu
+                            </a>
+                            <a href="" class="--links4">
+                                travel
+                            </a>
+                            <a href="" class="--links5">
+                                resturant
+                            </a>
+                            <a href="" class="--links6">
+                                life style
+                            </a>
+                            <a href="" class="--links7">
+                                design
+                            </a>
+                            <a href="" class="--links8">
+                                illustration
+                            </a>
+                        </div>
+                    </div>
+                    <div class="--instagram--feeds">
+                        <h3 class="--font--style--master">
+                            Instagram Feeds
+                        </h3>
+                        <div class="--line--black --fade"></div>
+                        <div class="--instagram--image">
+                            <div class="--image1">
+                                <a href="blog.html"></a>
+                            </div>
+                            <div class="--image2">
+                                <a href="blog.html"></a>
+                            </div>
+                            <div class="--image3">
+                                <a href="blog.html"></a>
+                            </div>
+                            <div class="--image4">
+                                <a href="blog.html"></a>
+                            </div>
+                            <div class="--image5">
+                                <a href="blog.html"></a>
+                            </div>
+                            <div class="--image6">
+                                <a href="blog.html"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="--newsletter">
+                        <h3 class="--font--style--master">
+                            Newsletter
+                        </h3>
+                        <div class="--line--black --fade"></div>
+                        <input type="email" placeholder="Enter Email">
+                        <a href="" class="--upper --font--style--master">
+                            subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="foot">
+            <div class="foot--master">
+                <div class="foot--top">
+                    <h2 class="--margin--top --font--style--master">
+                        I'm a designer, based in San Francisco. Currently a freelancer. You can see my hobbies on @Jack-Co and some photos on me too.
+                    </h2>
+                </div>
+
+                <div class="foot--midd --line--black--top">
+                    <div class="--midd--send">
+                        <p class="--upper --font--bold">
+                            drop a line
+                        </p>
+                        <form action="" class="--font--style--information">
+                            <input type="text" placeholder="Your Name" class="--font--style--information">
+                            <input type="email" placeholder="Email" class="--font--style--information">
+                            <input type="text" name="" id="" placeholder="Subject" class="--font--style--information">
+                            <textarea name="" placeholder="Message" id="" cols="30" rows="10" class="--font--style--information"></textarea>
+                        </form>
+                        <button class="--font--style--master">
+                            <a href="#" class="">
+                                Send Me
+                            </a>
+                        </button>
+                    </div>
+                    <div class="--midd--contact">
+                        <p class="--upper --contact--text --font--bold">
+                            Contact me
+                        </p>
+                        <div class="--contact--link">
+                            <a href="" class="--address">
+                                4657 Franklin Avenue, ARCH CAPE
+                            </a>
+                            <a href="" class="--number">
+                                +361-883-3218
+                            </a>
+                            <a href="" class="--email">
+                                hello@jac-co.com
+                            </a>
+                        </div>
+                        <div class="--contact--download">
+                            <button class="--upper">
+                                <a href="#" class="--upper">
+                                    download me
+                                </a>
+                            </button>
+                        </div>
+                        <div class="--contact--icon">
+                            <div class="--icon--facebook">
+                                <a href="">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                            </div>
+                            <div class="--icon--instagram">
+                                <a href="">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="--icon--linkedin">
+                                <a href="">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="foot--bottom">
+                    Copyright ©2024 All rights reserved | This template is made with
+                    <i class="fa fa-heart"></i>
+                    by
+                    <a href="">
+                        Colorlib
+                    </a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

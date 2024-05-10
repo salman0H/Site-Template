@@ -1,0 +1,88 @@
+.main{
+    width: 100%;
+    height: 1400px;
+    position: relative;
+    background: $--font--white--color;
+    .main--gallery{
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10% 10% 35% 35% 10%;
+        grid-template-areas: 
+        "empty1 empty2"
+        "head   head"
+        "image1 image2"
+        "image3 image4"
+        "empty3 empty4"
+        ;
+        grid-gap: 15px;
+        div{
+            position: relative;
+            a{
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: $--font--white--color;
+                .--search{
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 5;
+                    display: none;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.425));
+                    display: none;
+                }
+                &:hover{
+                    transition: 2s;
+                    .--search{
+                        display: block;
+                        top: 50%;
+                    }
+                    &::after{
+                        display: block;
+                    }
+                }
+            }
+        }
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+            grid-area: head;
+        }
+        .main--image1{
+            grid-area: image1;
+            background: url(../image/education/gallery1.jpg.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .main--image2{
+            grid-area: image2;
+            background: url(../image/education/gallery2.jpg.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .main--image3{
+            grid-area: image3;
+            background: url(../image/education/gallery3.jpg.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .main--image4{
+            grid-area: image4;
+            background: url(../image/education/gallery4.jpg.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+    
+}

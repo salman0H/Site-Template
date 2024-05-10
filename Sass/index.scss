@@ -1,0 +1,59 @@
+/*global*/
+@import "var";
+@import "reset";
+
+/*header*/
+@import "header";
+
+
+/*hero*/
+@import "hero";
+
+/*main*/
+@import "main";
+
+/*footer*/
+@import "footer";
+
+/*responsive*/
+@import "respon-index";
+
+/*hamburger menu*/
+@media (max-width: 768px){
+    /*header*/
+    .head--nav{
+        overflow: hidden;
+        .--check--ham{
+            cursor: pointer;
+            display: none;
+            &:checked ~ .--nav--menu{
+                display: block;
+            }
+        }
+        .--nav--menu{
+            width: 50%;
+            height: 100%;
+            display: none;
+            grid-area: none;
+            z-index: 20;
+            background-color: blaCK;
+            ul{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                z-index: 20;
+                li{
+                    border: none;
+                }
+            }
+        }
+        .--check--label{
+            grid-area: menuu;
+            display: block;
+            font-size: 18px;
+            text-align: right;
+            position: relative;
+            top: 40%;
+        }
+    }
+}

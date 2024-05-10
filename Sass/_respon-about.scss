@@ -1,0 +1,389 @@
+@media (max-width: 1000px){
+    /*main*/
+    .main--section1{
+        .main--info{
+            padding: 50px;
+        }
+    }
+}
+@media (max-width: 940px){
+    /*main*/
+    // section 6
+    .main--section6{
+        height: 200px;
+    }
+}
+@media (max-width: 900px){
+    /*header*/
+    .head--nav{
+        grid-template-columns: 1fr 3fr 8fr 1fr;
+    }
+    /*footer*/
+    .foot{
+        .foot--master{
+            .foot--midd{
+                .--midd--contact{
+                    grid-template-rows: 10% 10% 25% 15% 2% 18%;
+                    .--contact--download{
+                        margin-top: 2px;
+                    }
+                    .--contact--icon{
+                        div{
+                            width: 40px;
+                            height: 40px;
+                            font-size: 1.15rem;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    /*header*/
+    .head--nav{
+        overflow: hidden;
+        .--check--ham{
+            display: none;
+            &:checked ~ .--nav--menu{
+                display: block;
+            }
+        }
+        .--nav--menu{
+            display: none;
+            grid-area: none;
+            z-index: 20;
+            background-color: blaCK;
+            ul{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                z-index: 20;
+                li{
+                    border: none;
+                }
+            }
+        }
+        .--check--label{
+            grid-area: menuu;
+            display: block;
+            font-size: 18px;
+            text-align: right;
+            position: relative;
+            top: 40%;
+        }
+    }
+    /*hero*/
+    .hero{
+        overflow: hidden;
+        .hero--image{
+            left: 5%;
+        }
+        .hero--text{
+            top: 40%;
+            left: 10%;
+            .--text1{
+                width: 350px;;
+            }
+            .--text2{
+                width: 300px;
+            }
+        }
+    }
+    /*main*/
+    // section 1
+    .main--section1{
+        height: 1100px;
+        .main--info{
+            height: 950px;
+            padding: 30px;
+        }
+    }
+    // section 2
+    .main--section2{
+        height: 800px;
+        .--section2--myexpertise{
+            width: 90%;
+            height: 80%;
+            .--myexpertise--title{
+                font-size: 1.75rem;
+            }
+            .--myexpertise--left{
+                padding: 30px 35px 10px;
+                h2{
+                    margin: 0px 0px 87px;
+                    font-size: 1.5rem;
+                }
+    
+                :first-child::after{
+                    border-top: 15px solid transparent;
+                    border-right: 20px solid $--font--white--color;
+                    border-bottom: 15px solid transparent;
+                }
+            }
+            .--myexpertise--right{
+                .--right--info{
+                    p{
+                        font-size: 0.95rem;
+                        line-height: 1.25rem;
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // section 3
+    .main--section3{
+        height: 1100px;
+        .--section3{
+            .--section3--suggestion{
+                width: 100%;
+            }
+        }
+    }
+    // section 4
+    .main--section4{
+        height: 750px;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: 
+        "image image"
+        "info  info"
+        ;
+        .--section4--info{
+            .--info--text{
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    // section 5
+    .main--section5{
+        height: 900px;
+        .--section5{
+            .--section5--suggestion{
+                width: 100%;
+            }
+        }
+    }
+    /*footer*/
+    .foot{
+        height: 1400px;
+        .foot--master{
+            .foot--midd{
+                grid-template-columns: 1fr;
+                grid-template-rows: 50% 5% 45%;
+                grid-template-areas: 
+                "send"
+                "empty"
+                "contact"
+                ;
+                .--midd--send{
+                    button{
+                        padding: 9px 34px;
+                    }
+                }
+                .--midd--contact{
+                    width: 50%;
+                    grid-template-rows: 20% 35% 20% 5%;
+                    grid-template-areas: 
+                    // "empty1"
+                    "text"
+                    "link"
+                    "download"
+                    "icon"
+                    // "empty2"
+                    ;
+                    .--contact--download{
+                        button{
+                            padding: 15px;
+                        }
+                    }
+                    .--contact--icon{
+                        grid-template-columns: repeat(3, 31%) 7%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 665px) {
+    /*hero*/
+    .hero{
+        .hero--image{
+            left: 0%;
+        }
+    }
+}
+@media (max-width: 560px) {
+    /*main*/
+    .main--section1{
+        .main--info{
+            padding: 20px;
+        }
+    }
+    /*hero*/
+    .hero{
+        .hero--image{
+            display: none;
+        }
+    }
+}
+@media (max-width: 465px) {
+    /*main*/
+    .main--section1{
+        height: 1300px;
+        .main--info{
+            height: 1200px;
+            padding: 40px 10px;
+        }
+    }
+    //section 3
+    .main--section3{
+        height: 1600px;
+        .--section3{
+            width: 95%;
+            .--section3--suggestion{
+                width: 100%;
+            }
+        }
+    }
+    // section 5
+    .main--section5{
+        height: 1100px;
+        .--section5{
+            width: 95%;
+            .--section5--suggestion{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+
+        /*hero*/
+        .hero{
+            overflow: hidden;
+            .hero--image{
+                display: none;
+            }
+            .hero--text{
+                top: 40%;
+                left: 10%;
+                width: 100%;
+            }
+        }
+                /*main*/
+                .main--section1{
+                    height: 1500px;
+                    .main--info{
+                        height: 1400px;
+                        padding: 40px 20px;
+                        .--info--semantic{
+                            .--semantic--level{
+                                grid-template-columns: 1fr;
+                                grid-template-rows: repeat(4, 1fr);
+                                grid-template-areas: 
+                                //"empty1"
+                                "user"
+                                "web"
+                                "ui"
+                                "illustration"
+                                //"empty2"
+                                ;
+                            }
+                        }
+                    }
+                }
+                .main--section2{
+                    height: 900px;
+                    .--section2--myexpertise{
+                        .--myexpertise--title{
+                            font-size: 1.7rem;
+                        }
+                        .--myexpertise--left{
+                            padding: 30px 35px 10px;
+                            h2{
+                                font-size: 1.5rem;
+                                margin: 0px 0px 107px;
+                            }
+                        }
+                        .--myexpertise--right{
+                            padding: 0px 6px;
+                            .--right--info{
+                                p{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .main--section3{
+                    height: 1600px;
+                    .--section3{
+                        width: 95%;
+                        .--section3--suggestion{
+                            width: 100%;
+                        }
+                    }
+                }
+                .main--section4{
+                    height: 900px;
+                    grid-template-rows: 70% 30%;
+                    grid-template-areas: 
+                    "image image"
+                    "info  info"
+                    ;
+                    .--section4--info{
+                        .--info--text{
+                            line-height: 1.55rem;
+                            font-size: 26px;
+                        }
+                    }
+                }
+                .main--section5{
+                    height: 1100px;
+                    .--section5{
+                        width: 95%;
+                        .--section5--suggestion{
+                            width: 100%;
+                        }
+                    }
+                }
+
+    /*footer*/
+    .foot{
+        height: 1600px;
+        .foot--master{
+            .foot--midd{
+                grid-template-columns: 1fr;
+                grid-template-rows: 50% 5% 45%;
+                grid-template-areas: 
+                "send"
+                "empty"
+                "contact"
+                ;
+                .--midd--send{
+                    button{
+                        padding: 14px 34px;
+                    }
+                }
+                .--midd--contact{
+                    width: 80%;
+                    .--contact--download{
+                        button{
+                            width: 75%;    
+                            height: 65%;                       
+                            left: 0%;
+                            position: absolute;
+                            padding: 25px 34px;
+                        }
+                    }
+                    .--contact--icon{
+                        grid-template-columns: repeat(3, 30%) 10%;
+                    }
+                }
+            }
+        }
+    }
+}

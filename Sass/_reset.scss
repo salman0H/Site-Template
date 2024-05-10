@@ -1,0 +1,96 @@
+// base
+*, ::after, ::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// body
+body{
+    font-size: 16px;
+    color: $--font--black--color;
+    font-family: $--information--font;
+}
+
+// a
+a{
+    text-decoration: none;
+    color: $--font--black--color;
+}
+
+// ul
+ul{
+    list-style-type: none;
+}
+
+// image
+img{
+    width: 100%;
+}
+
+// transition
+.--transition{
+    transition: all .4s ease-out 0s;
+}
+
+// font style
+.--upper{
+    text-transform: uppercase;
+}
+.--info{
+    font-size: 12px;
+}
+.--font--bold{
+    font-weight: bold;
+}
+.--font--style--master{
+    font-family: $--master--font !important;
+}
+.--font--style--information{
+    font-family: $--information--font;
+}
+.--font--line--height{
+    line-height: 1.5rem;
+}
+.--sample{
+    font-size: 12px;
+    color: rgb(39, 127, 241);
+}
+.--font--blue{
+    color: rgb(0, 102, 255);
+}
+.--strike{
+    text-decoration:wavy;
+}
+.--underline{
+    text-decoration: underline;
+}
+
+// line
+.--line--black{
+    border-bottom: 1px solid $--font--gray--color;
+}
+.--line--black--all{
+    border-bottom: 1px solid $--font--gray--color;
+    border-top: 1px solid $--font--gray--color;
+}
+.--line--black--top{
+    border-top: 1px solid $--font--gray--color;
+}
+.--line--black--top--fade{
+    border-top: 1px solid $--form--gray--color;
+}
+
+// margin
+.--margin--top{
+    margin:25px 0px;
+}
+.--margin--left{
+    margin: 0px 15px;
+}
+
+// fade
+.--fade{
+    opacity: 60%;
+}
+

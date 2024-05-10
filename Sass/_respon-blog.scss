@@ -1,0 +1,397 @@
+/*for main right bar*/
+@media (max-width: 1700px){
+    /*main*/
+    .main{
+        .main--master{
+            .--master--right{
+                grid-template-rows: 1fr 3fr 2.25fr 1.5fr 1.5fr 1.5fr 8fr; 
+                .--newsletter{
+                    a{
+                        padding: 15px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1440px){
+    /*main*/
+    .main{
+        .main--master{
+            .--master--right{
+                grid-template-rows: 1fr 3fr 2.25fr 2fr 1.5fr 1.5fr 8fr; 
+                .--newsletter{
+                    a{
+                        padding: 15px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1300px){
+    /*main*/
+    .main{
+        .main--master{
+            .--master--right{
+                grid-template-rows: 1fr 3fr 2.75fr 2fr 3fr 1.5fr 8fr; 
+                .--recent--post{
+                    .--post{
+                        grid-template-columns: 30% 70%;
+                    }
+                }
+                .--instagram--feeds{
+                    grid-template-rows: repeat(4, 5%) 75% 5%;
+                    grid-template-areas:
+                    "empty" 
+                    "head"
+                    "line"
+                    "empty1"
+                    "image"
+                    "empty2"
+                    ;
+                    .--instagram--image{
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(3, 1fr);
+                    }
+                }
+                .--newsletter{
+                    a{
+                        padding: 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*for main left bar*/
+@media (max-width: 950px){
+    /*main*/
+    .main{
+        height: 4100px;
+        .main--master{
+            .--master--right{
+                grid-template-rows: 1fr 3fr 2.5fr 2fr 2.75fr 1.5fr 8fr; 
+                .--newsletter{
+                    a{
+                        padding: 15px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    /*header*/
+    .head--nav{
+        grid-template-columns: 1fr 3fr 8fr 1fr;
+    }
+    /*footer*/
+    .foot{
+        .foot--master{
+            .foot--midd{
+                .--midd--contact{
+                    grid-template-rows: 10% 10% 23% 17% 2% 18%;
+                    .--contact--download{
+                        button{
+                            padding: 20px 0px;
+                        }
+                    }
+                    .--contact--icon{
+                        div{
+                            width: 40px;
+                            height: 40px;
+                            font-size: 1.15rem;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    /*header*/
+    .head--nav{
+        overflow: hidden;
+        .--check--ham{
+            display: none;
+            &:checked ~ .--nav--menu{
+                display: block;
+            }
+        }
+        .--nav--menu{
+            display: none;
+            grid-area: none;
+            z-index: 20;
+            background-color: blaCK;
+            ul{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                z-index: 20;
+                li{
+                    border: none;
+                }
+            }
+        }
+        .--check--label{
+            grid-area: menuu;
+            display: block;
+            font-size: 18px;
+            text-align: right;
+            position: relative;
+            top: 40%;
+        }
+    }
+    /*hero*/
+    .hero{
+        overflow: hidden;
+        .hero--image{
+            left: 40%;
+        }
+        .hero--text{
+            top: 50%;
+            left: 10%;
+            .--text1{
+                width: 350px;;
+            }
+            .--text2{
+                width: 300px;
+            }
+        }
+    }
+    /*main*/
+    .main{
+        height: 6500px;
+        .main--master{
+            width: 90%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 60fr 35fr 1fr;
+            grid-template-areas: 
+            "empty1"
+            "left"
+            "right"
+            "empty5"
+            ;
+            .--master--right{
+                grid-template-rows: 1fr 2fr 6fr 6fr 2fr 6fr 2fr 1fr; 
+                grid-template-areas: 
+                "empty"
+                "search"
+                "category"
+                "recent"
+                "tag"
+                "instagram"
+                "newsletter"
+                "empty2"
+                ;
+                .--search{
+                    a{
+                        padding: 10px 0px;
+                    }
+                }
+                .--recent--post{
+                    .--post{
+                        grid-template-columns: 15% 85%;
+                    }
+                }
+                .--instagram--feeds{
+                    grid-template-rows: repeat(4, 5%) 75% 5%;
+                    grid-template-areas:
+                    "empty" 
+                    "head"
+                    "line"
+                    "empty1"
+                    "image"
+                    "empty2"
+                    ;
+                    .--instagram--image{
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                    }
+                }
+                .--newsletter{
+                    a{
+                        padding: 5px 0px;
+                    }
+                }
+            }
+        }
+    }
+    /*footer*/
+    .foot{
+        height: 1400px;
+        .foot--master{
+            .foot--midd{
+                grid-template-columns: 1fr;
+                grid-template-rows: 50% 5% 45%;
+                grid-template-areas: 
+                "send"
+                "empty"
+                "contact"
+                ;
+                .--midd--send{
+                    button{
+                        padding: 9px 34px;
+                    }
+                }
+                .--midd--contact{
+                    width: 50%;
+                    grid-template-rows: 20% 35% 20% 5%;
+                    grid-template-areas: 
+                    // "empty1"
+                    "text"
+                    "link"
+                    "download"
+                    "icon"
+                    // "empty2"
+                    ;
+                    .--contact--download{
+                        button{
+                            padding: 15px;
+                        }
+                    }
+                    .--contact--icon{
+                        grid-template-columns: repeat(3, 31%) 7%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// right bar
+@media (max-width: 640px){
+    /*main*/
+    .main{
+        .main--master{
+            .--master--right{
+                grid-template-rows: 1fr 2fr 6fr 6fr 2fr 4.5fr 2fr 1fr; 
+                grid-template-areas: 
+                "empty"
+                "search"
+                "category"
+                "recent"
+                "tag"
+                "instagram"
+                "newsletter"
+                "empty2"
+                ;
+                .--recent--post{
+                    .--post{
+                        grid-template-columns: 20% 80%;
+                    }
+                }
+                .--instagram--feeds{
+                    grid-template-rows: repeat(4, 5%) 75% 5%;
+                    grid-template-areas:
+                    "empty" 
+                    "head"
+                    "line"
+                    "empty1"
+                    "image"
+                    "empty2"
+                    ;
+                    .--instagram--image{
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                    }
+                }
+                .--newsletter{
+                    a{
+                        padding: 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 520px){
+    /*main*/
+    .main{
+        .main--master{
+            .--master--right{
+                grid-template-rows: 1fr 1.5fr 6fr 5fr 2.5fr 3.5fr 2fr 1fr;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    /*hero*/
+    .hero{
+        overflow: hidden;
+        .hero--image{
+            display: none;
+        }
+        .hero--text{
+            top: 50%;
+            left: 10%;
+            width: 100%;
+        }
+    }
+    /*main*/
+    .main{
+        height: 8000px;
+        .main--master{
+            .--master--right{
+                grid-template-rows: 1fr 2fr 6fr 6fr 3.5fr 30fr 3fr 1fr;
+                .--instagram--feeds{
+                    grid-template-rows: 1fr 1fr 1fr 1fr 40fr 1fr;
+                    grid-template-areas:
+                    "empty" 
+                    "head"
+                    "line"
+                    "empty1"
+                    "image"
+                    "empty2"
+                    ;
+                    .--instagram--image{
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(6, 1fr);
+                    }
+                }
+            }
+        }
+    }
+    /*footer*/
+    .foot{
+        height: 1600px;
+        .foot--master{
+            .foot--midd{
+                grid-template-columns: 1fr;
+                grid-template-rows: 50% 5% 45%;
+                grid-template-areas: 
+                "send"
+                "empty"
+                "contact"
+                ;
+                .--midd--send{
+                    button{
+                        padding: 14px 34px;
+                    }
+                }
+                .--midd--contact{
+                    width: 80%;
+                    .--contact--download{
+                        button{
+                            width: 75%;    
+                            height: 65%;                       
+                            left: 0%;
+                            position: absolute;
+                            padding: 25px 34px;
+                        }
+                    }
+                    .--contact--icon{
+                        grid-template-columns: repeat(3, 30%) 10%;
+                    }
+                }
+            }
+        }
+    }
+}

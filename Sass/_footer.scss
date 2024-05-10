@@ -1,0 +1,167 @@
+.foot{
+    width: 100%;
+    height: 800px;
+    background-color: $--master--body--main--color;
+    position: relative;
+    .foot--master{
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 70% 10%;
+        .foot--top{
+            text-align: center;
+        }
+        .foot--midd{    
+            position: relative;
+            display: grid;
+            grid-template-columns: 50% 20% 30%;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "send empty contact"
+            ;
+            .--midd--send{
+                grid-area: send;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 10% 10% 55% 15% 10%;
+                grid-template-areas: 
+                "empty1"
+                "text"
+                "form"
+                "send"
+                "empty2"
+                ;
+                position: relative;
+                p{
+                    grid-area: text;
+                }
+                form{
+                    grid-area: form;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr) 2fr;
+                    grid-gap: 20px;
+                    input, textarea{
+                        background: transparent;
+                        border: transparent;
+                        border-bottom: 1px solid $--font--gray--color;
+                        color: black;
+                    }
+                }
+                button{
+                    grid-area: send;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    text-align: center;
+                    width: 50%;
+                    height: 65%;
+                    background: black;
+                    border: 1px solid $--font--black--color;
+                    padding: 14px 34px;
+                    a{
+                        color: $--font--white--color;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                }
+            }
+            .--midd--contact{
+                grid-area: contact;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 10% 10% 20% 20% 5% 15%;
+                grid-template-areas: 
+                "empty1"
+                "text"
+                "link"
+                "download"
+                "icon"
+                "empty2"
+                ;
+                .--contact--text{
+                    grid-area: text;
+                }
+                .--contact--link{
+                    grid-area: link;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    a{
+                        transition: 0.3s;
+                        &:hover{
+                            text-decoration: underline;
+                            transform: translateX(5px);
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                .--contact--download{
+                    grid-area: download;
+                    text-align: center;
+                    margin-top: 10px;
+                    position: relative;
+                    button{
+                        width: 100%;
+                        height: 60%;
+                        background: transparent;
+                        border: 1px solid $--font--black--color;
+                        padding: 22px 34px;
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .--contact--icon{
+                    grid-area: icon;
+                    display: grid;
+                    grid-template-columns: repeat(3, 30%) 10%;
+                    padding: 10px;
+                    div{
+                        text-align: center;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        line-height: 50px;
+                        font-size: 1.5rem;
+                        background: linear-gradient(rgba(0, 0, 0, 0.205),rgba(0, 0, 0, 0.192));
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            color: $--font--white--color;
+                            border-radius: 50%;
+                            transition: 0.7s;
+                            i{
+                                transition: 0.7s;
+                            }
+                            &:hover{
+                                i{
+                                    transform: rotateY(540deg);
+                                    transition: 0.7s;
+                                }
+                                background: black;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .foot--bottom{
+            text-align: center;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+}
